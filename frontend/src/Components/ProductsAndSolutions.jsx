@@ -13,39 +13,41 @@ import {
 } from "@mui/material";
 import {
   ChevronRightRounded,
-  DevicesRounded,
-  EdgesensorHighRounded,
-  ViewQuiltRounded,
+  BugReportRounded,
+  CodeRounded,
+  SecurityRounded,
 } from "@mui/icons-material";
 import { Link as RouterLink } from "react-router-dom";
 
 const items = [
   {
-    icon: <EdgesensorHighRounded />,
-    title: "Cyber Security - Penetration Testing",
-    link: "/cyberSecurity",
+    icon: <CodeRounded />,
+    title: "Software Development",
+    link: "/softwareDevelopment",
     description:
-      "Connect with customers in real-time to share brand, product, and service information.",
-    imageLight: 'url("images/cs1.png")',
-    imageDark: 'url("images/cs1.png")',
+      "About the course This Full Stack Java Developer program will help you master both front-end and back-end...",
+
+    imageLight: 'url("images/ai1.png")',
+    imageDark: 'url("images/ai1.png")',
   },
   {
-    icon: <ViewQuiltRounded />,
-    title: "Cloud Services",
-    link: "/cloudService",
+    icon: <BugReportRounded />,
+    title: "Software Testing",
+    link: "/softwareTesting",
     description:
-      "Our agile approach ensures fast delivery with custom-built, scalable digital solutions.",
+      "In this course you will learn all the fundamentals that you need to know about Software Testing ...",
     imageLight: 'url("images/aws1.png") ',
     imageDark: 'url("images/aws1.png")',
   },
   {
-    icon: <DevicesRounded />,
-    title: "AI & ML",
-    link: "/AIML",
+    icon: <SecurityRounded />,
+    title: "Cyber Security",
+    link: "/cloudService",
     description:
-      "Inform users that the product is available across web, mobile, and desktop platforms.",
-    imageLight: 'url("images/ai1.png")',
-    imageDark: 'url("images/ai1.png")',
+      "To manage the information security culture, five steps should be taken: pre-evaluation, strategic ...",
+
+    imageLight: 'url("images/cs1.png")',
+    imageDark: 'url("images/cs1.png")',
   },
 ];
 
@@ -66,7 +68,7 @@ export default function ProductsAndSolutions() {
           color="text.primary"
           sx={{ textAlign: "center", marginBottom: "2rem" }}
         >
-          Products and Solutions
+          Courses
         </Typography>
         <Grid container spacing={6}>
           <Grid item xs={12} md={6}>

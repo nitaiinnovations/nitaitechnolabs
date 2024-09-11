@@ -14,9 +14,7 @@ import getLPTheme from "./Components/getLPTheme";
 
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import CloudService from "./Pages/CloudService";
 import CyberSecurity from "./Pages/CyberSecurity";
-import AIML from "./Pages/AIML";
 import Footer from "./Components/Footer";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
@@ -25,6 +23,9 @@ import CreateBlog from "./Pages/CreateBlog";
 import Account from "./Pages/Account";
 import EditBlog from "./Pages/EditBlog";
 import EditProfile from "./Pages/EditProfile";
+import AboutUs from "./Pages/AboutUs";
+import SoftwareTesting from "./Pages/SoftwareTesting";
+import SoftwareDevelopment from "./Pages/SoftwareDevelopment";
 
 export default function App() {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -72,10 +73,11 @@ function MainContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cyberSecurity" element={<CyberSecurity />} />
-        <Route path="/cloudService" element={<CloudService />} />
-        <Route path="/AIML" element={<AIML />} />
+        <Route path="/softwareTesting" element={<SoftwareTesting />} />
+        <Route path="/softwareDevelopment" element={<SoftwareDevelopment />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/createBlog" element={<CreateBlog />} />
         <Route path="/account" element={<Account />} />

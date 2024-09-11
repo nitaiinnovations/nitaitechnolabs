@@ -7,6 +7,7 @@ function FeatureMainSection({
   subTitle = "",
   description = "",
   imageURL = "",
+  imageWidth = "40%",
 }) {
   return (
     <Box
@@ -27,7 +28,7 @@ function FeatureMainSection({
           flexDirection: "column",
           alignItems: "center",
           pt: { xs: 14, sm: 20 },
-          pb: { xs: 8, sm: 12 },
+          pb: { xs: 0, sm: 0 },
         }}
       >
         <Stack spacing={2} useFlexGap sx={{ width: { xs: "100%", sm: "80%" } }}>
@@ -80,14 +81,14 @@ function FeatureMainSection({
             src={imageURL}
             alt=""
             sx={{
+              borderRadius: "1rem",
               width: {
                 xs: "90%",
-                md: "40%",
+                md: `${imageWidth}`,
               },
             }}
           />
         </Box>
-
         <Stack
           direction="row"
           spacing={2}

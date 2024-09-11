@@ -78,12 +78,48 @@ export default function CustomDropdown({ toggleDrawer }) {
             ...(isMobile ? { left: "auto", right: 0 } : { left: 0 }),
           }}
         >
+          <Link to="/softwareDevelopment" style={{ textDecoration: "none" }}>
+            <Box
+              component="div"
+              sx={{
+                padding: ".5rem 1rem",
+                width: "auto",
+                cursor: "pointer",
+                transition: "background-color 0.2s ease",
+                color: isLightMode ? "black" : "white",
+                "&:hover": {
+                  backgroundColor: isLightMode ? "#409fff42" : "#224176",
+                },
+              }}
+              onClick={handleClick}
+            >
+              <Typography variant="p">Software Development</Typography>
+            </Box>
+          </Link>
+          <Link to="/softwareTesting" style={{ textDecoration: "none" }}>
+            <Box
+              component="div"
+              sx={{
+                padding: ".5rem 1rem",
+                width: "auto",
+                cursor: "pointer",
+                transition: "background-color 0.2s ease",
+                color: isLightMode ? "black" : "white",
+                "&:hover": {
+                  backgroundColor: isLightMode ? "#409fff42" : "#224176",
+                },
+              }}
+              onClick={handleClick}
+            >
+              <Typography variant="p">Software Testing</Typography>
+            </Box>
+          </Link>
           <Link to="/cyberSecurity" style={{ textDecoration: "none" }}>
             <Box
               component="div"
               sx={{
                 padding: ".5rem 1rem",
-                width: "12rem",
+                width: "auto",
                 cursor: "pointer",
                 transition: "background-color 0.2s ease",
                 color: isLightMode ? "black" : "white",
@@ -94,44 +130,6 @@ export default function CustomDropdown({ toggleDrawer }) {
               onClick={handleClick}
             >
               <Typography variant="p">Cyber Security</Typography>
-            </Box>
-          </Link>
-
-          <Link to="/cloudService" style={{ textDecoration: "none" }}>
-            <Box
-              component="div"
-              sx={{
-                padding: ".5rem 1rem",
-                width: "12rem",
-                cursor: "pointer",
-                transition: "background-color 0.2s ease",
-                color: isLightMode ? "black" : "white",
-                "&:hover": {
-                  backgroundColor: isLightMode ? "#409fff42" : "#224176",
-                },
-              }}
-              onClick={handleClick}
-            >
-              <Typography variant="p">Cloud Services</Typography>
-            </Box>
-          </Link>
-
-          <Link to="/AIML" style={{ textDecoration: "none" }}>
-            <Box
-              component="div"
-              sx={{
-                padding: ".5rem 1rem",
-                width: "12rem",
-                cursor: "pointer",
-                transition: "background-color 0.2s ease",
-                color: isLightMode ? "black" : "white",
-                "&:hover": {
-                  backgroundColor: isLightMode ? "#409fff42" : "#224176",
-                },
-              }}
-              onClick={handleClick}
-            >
-              <Typography variant="p">AI & ML</Typography>
             </Box>
           </Link>
         </Box>

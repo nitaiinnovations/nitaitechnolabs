@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import "../Styles/aboutUsComp.css";
 
@@ -25,12 +26,16 @@ function AboutUsComp() {
               fontFamily: "Tinos",
             }}
           >
-            We're excited to share our story with you. At NITAI INNOVATIONS, we
-            are a passionate and dedicated team of professionals with a mission
-            to make a difference in the world of Information Technology. Our
-            journey began by a shared vision to be successful in handling the
-            cyber security threats in the IT Industry.
+            At NITAI TECHNOLOGICAL TRAINING INSTITUTE, we are dedicated to
+            providing exceptional software training to individuals who are eager
+            to enhance their skills and launch a successful career in the
+            ever-evolving field of technology.
           </Typography>
+          <Box sx={{ display: "flex", justifyContent: "center", mt: 5 }}>
+            <Link to="/aboutus">
+              <Button variant="outlined">Know more</Button>
+            </Link>
+          </Box>
         </div>
         <div className="rightAboutUs">
           <img className="aboutUsImage" src="/images/aboutUs.png" alt="" />

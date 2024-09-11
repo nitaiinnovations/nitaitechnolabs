@@ -2,7 +2,6 @@ import * as React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import DividerLine from "./DividerLine";
 
 export default function Features({ data, imageURL = "", number = false }) {
   const [expanded, setExpanded] = React.useState(false);

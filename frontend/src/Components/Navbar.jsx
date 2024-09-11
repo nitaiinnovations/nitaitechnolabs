@@ -11,12 +11,9 @@ import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import IconButton from "@mui/material/IconButton";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import Menu from "@mui/material/Menu";
+
 import ToggleColorMode from "./ToggleColorMode";
 import DropDownButton from "./DropDownButton";
-import { storeLoggedinRecord } from "../Store/userSlice";
 
 function Navbar({ mode, toggleColorMode }) {
   const [showAccountBtn, setShowAccountBtn] = useState(false);
@@ -161,7 +158,7 @@ function Navbar({ mode, toggleColorMode }) {
                           color="text.primary"
                           sx={{ display: "flex", alignItems: "center" }}
                         >
-                          Product and Solutions
+                          Courses
                         </Typography>
                         <DropDownButton toggleDrawer={toggleDrawer} />
                       </Box>
@@ -307,7 +304,7 @@ function Navbar({ mode, toggleColorMode }) {
                     >
                       <MenuItem sx={{ py: "6px", px: "12px" }}>
                         <Typography variant="p" color="text.primary">
-                          Products and Solutions
+                          Courses
                         </Typography>
                       </MenuItem>
                     </Link>

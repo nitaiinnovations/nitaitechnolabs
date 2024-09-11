@@ -42,8 +42,14 @@ export default function Footer() {
             className="sectionDivider"
             sx={{
               display: " grid",
+              alignItems: "start !important",
               gap: "1rem",
-              gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr 1fr" },
+              gridTemplateColumns: {
+                xs: "1fr",
+                sm: "1fr 1fr",
+                md: "1fr 1fr 1fr",
+              },
+              height: "100%",
             }}
           >
             <Box
@@ -63,7 +69,7 @@ export default function Footer() {
                     theme.palette.mode === "light" ? "#0959AA" : "#50a3f7",
                 }}
               >
-                ABOUT NITAI INNOVATIONS
+                About NITAI TECHNOLOGICAL TRAINING INSTITUTE
               </Typography>
               <Box
                 sx={{
@@ -72,10 +78,12 @@ export default function Footer() {
                   mt: 2,
                 }}
               >
-                <Typography variant="p">
-                  We are a passionate and dedicated team of professionals with a
-                  mission to make a difference in the world of Information
-                  Technology
+                <Typography variant="p" sx={{ fontSize: "1.2rem !important" }}>
+                  Our mission is to equip candidates with comprehensive
+                  knowledge and practical experience in various software
+                  technologies. We strive to bridge the gap between theoretical
+                  knowledge and real-world applications, empowering individuals
+                  to meet the demands of the industry.
                 </Typography>
               </Box>
             </Box>
@@ -136,7 +144,28 @@ export default function Footer() {
                   href="mailto:hr@nitaiinnovations.com"
                   style={{ textDecoration: "none", textTransform: "none" }}
                 >
-                  hr@nitaiinnovations.com
+                  enquiry@nitaitechnolabs.in
+                </a>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "start",
+                  gap: "1vw",
+                  alignItems: "center",
+                  mt: 1,
+                }}
+              >
+                <Box sx={{ marginRight: { xs: "2rem", sm: "0" } }}>
+                  <img
+                    style={{ width: "20px", height: "20px" }}
+                    src="/images/call.png"
+                    alt=""
+                  />
+                </Box>
+
+                <a style={{ textDecoration: "none", textTransform: "none" }}>
+                  08362442285
                 </a>
               </Box>
             </Box>
@@ -219,11 +248,15 @@ export default function Footer() {
             <Link
               color="text.secondary"
               href="#"
-              style={{ marginRight: "1rem" }}
+              sx={{
+                marginRight: "1rem",
+                color: "text.secondary",
+                fontSize: "1rem !important",
+              }}
             >
-              Privacy Policy
+              Copyright © 2024 NITAI TECHNOLOGICAL TRAINING INSTITUTE. All
+              Rights Reserved.
             </Link>
-            <Copyright />
           </Box>
         </Box>
       </Container>

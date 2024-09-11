@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
-import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
@@ -42,17 +41,19 @@ export default function Hero() {
             <Typography
               variant="h1"
               sx={{
+                color: (theme) =>
+                  theme.palette.mode === "light" ? "#0959AA" : "#50a3f7",
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
                 alignSelf: "center",
                 textAlign: "center",
-                fontFamily: "Times New Roman !important",
+                fontFamily: "Josefin Sans, sans-serif !important",
                 fontWeight: "bold !important",
-                fontSize: { xs: "2.8rem !important", md: "4rem !important" },
+                fontSize: { xs: "2.5rem !important", md: "3.3rem !important" },
                 marginBottom: "2rem",
               }}
             >
-              NITAI TECHNO LABS
+              NITAI TECHNOLOGICAL TRAINING INSTITUTE
             </Typography>
             <Typography
               textAlign="center"
@@ -62,14 +63,15 @@ export default function Hero() {
                 alignSelf: "center",
                 fontFamily: "Tinos",
                 lineHeight: "2rem !important",
-                fontSize: { xs: "1.2rem !important", md: "1.5rem !important" },
+                fontSize: { xs: "1.2rem !important", md: "1.4rem !important" },
               }}
             >
-              Welcome to Our Organization! We are passionate about protecting
-              your digital life from threats and ensuring your online safety.
-              Our mission is to empower individuals and organizations with the
-              knowledge and tools to navigate the ever-evolving cybersecurity
-              landscape.
+              Whether you are a beginner exploring the world of software
+              development or an experienced professional looking to specialize
+              in a specific technology, NITAI TECHNOLOGICAL TRAINING INSTITUTE
+              is the perfect destination for your software training needs. Join
+              us on this journey to unlock your full potential and succeed in
+              your professional aspirations.
             </Typography>
             <Box
               sx={{
