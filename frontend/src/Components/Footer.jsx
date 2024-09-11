@@ -4,15 +4,6 @@ import "../Styles/footer.css";
 import { Box, Container, Typography } from "@mui/material";
 import DividerLine from "./DividerLine";
 
-function Copyright() {
-  return (
-    <Typography variant="p" color="text.secondary" mt={1} textAlign="center">
-      Copyright © NITAI INNOVATIONS&nbsp;
-      {new Date().getFullYear()}
-    </Typography>
-  );
-}
-
 export default function Footer() {
   return (
     <>
