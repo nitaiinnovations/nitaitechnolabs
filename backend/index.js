@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const path = require("path");
 require("dotenv").config();
 
-// Import routes
 const registerUser = require("./routes/registerUser");
 const loginUser = require("./routes/loginUser");
 const createBlog = require("./routes/createBlog");
