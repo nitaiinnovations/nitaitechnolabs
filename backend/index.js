@@ -12,13 +12,12 @@ const userData = require("./routes/userData");
 const editBlog = require("./routes/editBlog");
 const updateUser = require("./routes/updateUser");
 const deleteBlog = require("./routes/deleteBlog");
-const userMessage = require("./routes/userMessages");
 
 const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ["https://nitaitechnolabs.netlify.app", "https://nitaitechnolabs.in", process.env.FRONTEND_URL],
+  origin: ["https://nitaitechnolabs.netlify.app", "https://nitaitechnolabs.in", "https://www.nitaitechnolabs.in", "https://api.nitaitechnolabs.in", process.env.FRONTEND_URL],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
@@ -50,7 +49,6 @@ app.use("/getUserData", userData);
 app.use("/editBlog", editBlog);
 app.use("/updateUser", updateUser);
 app.use("/deleteBlog", deleteBlog);
-app.use("/userMessages", userMessage);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -58,8 +56,10 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message });
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port : 3000 ");
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log("Server started on port : ", PORT);
 });
 
 module.exports = app;
