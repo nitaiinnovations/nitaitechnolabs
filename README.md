@@ -36,15 +36,15 @@ Welcome to the Nitai Techno Labs website! This website serves as the online plat
 3. **Set up environment variables**:
 
    - Create a `.env` file in both frontend and backend directories.
-   - Add necessary environment variables as per the `.env.example` files provided.
+   - Contact to us to get env variables
 
 4. **Run the application**:
 
    - Start the backend server: `nodemon`
-   - Start the frontend development server: `npm run dev`
+   - Start the frontend server: `npm run dev`
 
 5. **Access the application**:
-   Open your browser and navigate to `http://localhost:3000` to start using the application.
+   Open your browser and navigate to `http://localhost:5173` to start using the application.
 
 ## Technologies Used
 
